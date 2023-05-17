@@ -1,6 +1,4 @@
 <?php
-
-
 class TreeNode
 {
     public $val;
@@ -25,7 +23,6 @@ function largerSubtree($root)
     else if ($left < $right) return 'right';
     else  return 'none';
 }
-
 function countChilds($node)
 {
     if (!$node) {
@@ -34,8 +31,6 @@ function countChilds($node)
         return countChilds($node->left) + countChilds($node->right) + 1;
     }
 }
-
-
 
 $root = new TreeNode(1);
 $root->left = new TreeNode(2);
